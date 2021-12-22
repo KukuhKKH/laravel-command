@@ -1,7 +1,7 @@
-![issues](https://img.shields.io/github/issues/kukuhkkh/laravel-more-command??style=flat&logo=appveyor)
-![forks](https://img.shields.io/github/forks/kukuhkkh/laravel-more-command?style=flat&logo=appveyor)
-![stars](https://img.shields.io/github/stars/kukuhkkh/laravel-more-command?style=flat&logo=appveyor)
-[![GitHub license](https://img.shields.io/github/license/kukuhkkh/laravel-more-command)](https://github.com/kukuhkkh/laravel-more-command/blob/master/LICENSE)
+![issues](https://img.shields.io/github/issues/kukuhkkh/laravel-command??style=flat&logo=appveyor)
+![forks](https://img.shields.io/github/forks/kukuhkkh/laravel-command?style=flat&logo=appveyor)
+![stars](https://img.shields.io/github/stars/kukuhkkh/laravel-command?style=flat&logo=appveyor)
+[![GitHub license](https://img.shields.io/github/license/kukuhkkh/laravel-command)](https://github.com/kukuhkkh/laravel-command/blob/master/LICENSE)
 
 # Laravel More Command
 Laravel More Command is a collection of a few `php artisan` commands. You can use it to create a __Repository, Repository with Interface, Service, Trait, View(blade file)__, and __Clear Log__ from the command line using `php artisan` command.\
@@ -12,14 +12,14 @@ Laravel More Command is a collection of a few `php artisan` commands. You can us
 Require the package with composer using the following command:
 
 ```
-composer require kukuhkkh/laravel-more-command --dev
+composer require kukuhkkh/laravel-command --dev
 ```
 
 Or add the following to your composer.json's require-dev section and `composer update`
 
 ```json
 "require-dev": {
-        "kukuhkkh/laravel-more-command": "^1.2.0"
+        "kukuhkkh/laravel-command": "^1.0.0"
     }
 ```
 ## Artisan Command List
