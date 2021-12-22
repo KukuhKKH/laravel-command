@@ -1,0 +1,27 @@
+{
+    "name": "Kukuhkkh/laravel-command",
+    "require": {},
+    "description": "Create a Repository and Service class and trait using Artisan CLI",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kukuh Rahmadani",
+            "email": "Krahmadani1@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "type": "library",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kukuhkkh\\LaravelCommand\\LaravelCommandProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Kukuhkkh\\LaravelCommand\\": "src/"
+        },
+        "classmap": ["src/"]
+    }
+}
