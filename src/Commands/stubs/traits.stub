@@ -1,7 +1,6 @@
 <?php
 namespace $CLASS_NAMESPACE$;
 
-trait $CLASS$
-{
+trait $CLASS$ {
     
 }

@@ -2,7 +2,6 @@
 
 namespace $CLASS_NAMESPACE$;
 
-interface $INTERFACE$
-{
+interface $INTERFACE$ {
     
 }

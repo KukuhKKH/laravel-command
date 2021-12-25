@@ -1,0 +1,63 @@
+<?php
+
+namespace $CLASS_NAMESPACE$;
+
+use Illuminate\Database\Eloquent\ModelNotFoundException;
+
+class $CLASS$ {
+
+   private $model;
+
+   public function __construct() {
+      $this->model = new Model;
+   }
+
+   public function index($request) {
+      try {
+         return $model->all();
+      } catch (\Exception $e) {
+         throw $e; report($e); return $e;
+      }
+   }
+
+   public function show($id) {
+      try {
+         return $this->model->find($id);
+      } catch(ModelNotFoundException $e) {
+         throw new \Exception("Data tidak ditemukan", 404);
+      } catch (\Exception $e) {
+         throw $e; report($e); return $e;
+      }
+   }
+
+   public function store($request, $image) {
+      try {
+         $request['photo'] = $this->uploadImage($image, $this->pathImage);
+         return $this->model->create($request);
+      } catch (\Exception $e) {
+         throw $e; report($e); return $e;
+      }
+   }
+
+   public function update($request, $id, $image = null) {
+      try {
+         $data = $this->model->find($id);
+         return $data->update($request);
+      } catch(ModelNotFoundException $e) {
+         throw new \Exception("Data tidak ditemukan", 404);
+      } catch (\Exception $e) {
+         throw $e; report($e); return $e;
+      }
+   }
+
+   public function destroy($id) {
+      try {
+         $data = $this->model->findOrFail($id);
+         return $data->delete();
+      } catch(ModelNotFoundException $e) {
+         throw new \Exception("Data tidak ditemukan", 404);
+      } catch (\Exception $e) {
+         throw $e; report($e); return $e;
+      }
+   }
+}

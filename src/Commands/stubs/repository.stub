@@ -2,10 +2,11 @@
 
 namespace $CLASS_NAMESPACE$;
 
-class $CLASS$
-{
-    public function __construct()
-    {
-        //
+class $CLASS$ {
+
+    private $model;
+
+    public function __construct() {
+        $this->model = new Model;
     }
 }

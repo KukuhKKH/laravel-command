@@ -56,7 +56,8 @@ class CreateRepositoryCommand extends CommandGenerator
     protected function getOptions()
     {
         return [
-            ['interface', 'i', InputOption::VALUE_NONE, 'Flag to create associated Interface', null]
+            ['interface', 'i', InputOption::VALUE_NONE, 'Flag to create associated Interface', null],
+            ['resource', 'r', InputOption::VALUE_NONE, 'Create all method in HTTP request', null]
         ];
     }
 
@@ -183,6 +184,8 @@ class CreateRepositoryCommand extends CommandGenerator
     {
         if ($this->option('interface') === true) {
             $stub = '/stubs/repository-interface.stub';
+        } else if ($this->option('resource') === true) {
+            $stub = '/stubs/repository-resource.stub';
         } else {
             $stub = '/stubs/repository.stub';
         }

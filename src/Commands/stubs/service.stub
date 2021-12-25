@@ -2,10 +2,9 @@
 
 namespace $CLASS_NAMESPACE$;
 
-class $CLASS$
-{
-    public function __construct()
-    {
+class $CLASS$ {
+    
+    public function __construct() {
         //
     }
 }
