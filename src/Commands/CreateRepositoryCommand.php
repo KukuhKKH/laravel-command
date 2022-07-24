@@ -257,7 +257,7 @@ class CreateRepositoryCommand extends CommandGenerator
             
             (new FileGenerator($path, $contents))->generate();
             
-            $this->info("Created : {$path}");
+            $this->info("Repository created successfully.");
 
             // For Interface
             if($this->option('interface') === true){

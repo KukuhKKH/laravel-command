@@ -8,7 +8,7 @@ use Kukuhkkh\LaravelCommand\Commands\CreateTraitCommand;
 use Kukuhkkh\LaravelCommand\Commands\CreateServiceCommand;
 use Kukuhkkh\LaravelCommand\Commands\CreateBladeCommand;
 use Kukuhkkh\LaravelCommand\Commands\ClearLogCommand;
-
+use Kukuhkkh\LaravelCommand\Commands\CreateEnumCommand;
 use Kukuhkkh\LaravelCommand\Commands\CreateModuleRepositoryCommand;
 use Kukuhkkh\LaravelCommand\Commands\CreateModuleTraitCommand;
 use Kukuhkkh\LaravelCommand\Commands\CreateModuleServiceCommand;
@@ -31,6 +31,7 @@ class LaravelCommandProvider extends ServiceProvider
             CreateServiceCommand::class,
             CreateBladeCommand::class,
             ClearLogCommand::class,
+            CreateEnumCommand::class,
             
             
             // For nWidart/laravel-modules:
